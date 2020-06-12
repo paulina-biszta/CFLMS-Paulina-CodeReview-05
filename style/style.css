@@ -46,6 +46,7 @@ li {
 
 section {
     display: flex;
+    width: 100%;
 }
 
 section>h1 {
@@ -59,20 +60,59 @@ section>h1 {
     align-items: center;
 }
 
-section>h2 {
+#buttons {
     background-color: #204051;
     flex-basis: 45%;
-    color: white;
-    font-size: 2vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 3vw;
+}
+
+#sort {
+    background-color: #204051;
+    color: white;
+    font-size: 2vw;
+    border: none;
+    margin: 3vw;
+    display: flex;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
-section>h2>span {
-    font-size: 2.1vw;
+#sort>span {
+    font-size: 1.8vw;
+}
+
+#sub_buttons {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 26vw;
+    right: 3vw;
+    background-color: rgba(29, 36, 42, 0.4);
+    width: 12vw;
+}
+
+.sub_button {
+    border: 0;
+    background-color: inherit;
+    color: white;
+    font-size: 1vw;
+    width: 100%;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.sub_button:hover {
+    background-color: rgba(29, 36, 42, 0.4);
+}
+
+#buttons:hover #sub_buttons {
+    display: block;
+}
+
+#sort_button:hover {
+    background-color: rgba(29, 36, 42, 0.4);
 }
 
 #container {
@@ -83,6 +123,7 @@ section>h2>span {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 15vw;
+    padding-top: 4vw;
 }
 
 .movie_wrapper {

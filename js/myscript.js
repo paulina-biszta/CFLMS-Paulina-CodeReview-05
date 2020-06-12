@@ -27,6 +27,7 @@ $(document).ready(function() {
         `;
     }
     $("#container").html(content);
+
     var movieLikeCounter = $('.likeImage');
     var countNum = $('.headerCounter');
     for (let i = 0; i < movieLikeCounter.length; i++) {
@@ -36,12 +37,24 @@ $(document).ready(function() {
             countNum[i].innerHTML++;
         }
     }
-    //sort
-    $('#sort').on('click', sort);
+    $("#popular").on("click", function() {
+        let num_order = $(".movie_wrapper").sort(function(a, b) {
+            return $(b).find("h1").text() - $(a).find("h1").text()
+        })
+        $("#container").html(num_order)
+    })
 
-    num = $('.headerCounter');
-    num.sort(function sort(a, b) {
-        return a - b
-    });
+    $("#least").on("click", function() {
+        let num_order_inverse = $(".movie_wrapper").sort(function(a, b) {
+            return $(a).find("h1").text() - $(b).find("h1").text()
+        })
+        $("#container").html(num_order_inverse)
+    })
 
+    $("#alpha").on("click", function() {
+        let alph = $(".movie_wrapper").sort(function(a, b) {
+            return $(a).find("h3").text() < $(b).find("h3").text() ? -1 : 1
+        })
+        $("#container").html(alph)
+    })
 });
