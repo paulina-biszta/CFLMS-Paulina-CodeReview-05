@@ -7,24 +7,28 @@
     <title>Movie Factory</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="js/movies.json"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/myscript.js"></script>
 </head>
 
 <body>
+    <!--header starts here-->
     <header>
         <img src="img/logo-movie.png">
         <h1>Movie Factory</h1>
     </header>
+    <!--header ends here-->
+    <!--navbar starts here-->
     <nav>
         <ul>
             <li>Home</li>
         </ul>
     </nav>
+    <!--navbar ends here-->
+    <!--main starts here-->
     <main>
         <section>
             <h1>Movies</h1>
+            <!--sort menu starts here-->
             <div id="buttons">
                 <button id="sort"><span>&#9660;</span>Sort</button>
                 <div id="sub_buttons">
@@ -33,14 +37,21 @@
                     <button class="sub_button" id="alpha">Alphabetically</button>
                 </div>
             </div>
-
+            <!--sort menu ends here-->
         </section>
-        <div id="container"></div>
+        <div id="container">
+            <!--javascript goes here-->
+        </div>
     </main>
+    <!--main ends here-->
+    <!--footer starts here-->
     <footer>
         <img src="img/logo-movie.png">
         <h1>Movie Factory</h1>
     </footer>
+    <!--footer ends here-->
+    <script src="js/movies.json"></script>
+    <script src="js/myscript.js"></script>
 </body>
 
 </html>

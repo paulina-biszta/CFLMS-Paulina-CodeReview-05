@@ -31,6 +31,8 @@ $(document).ready(function() {
     }
     $("#container").html(content);
 
+    //more info button starts here//
+
     var morebutton = $('.moreb')
     var moreinf = $('.more_info')
     for (let i = 0; i < morebutton.length; i++) {
@@ -41,6 +43,8 @@ $(document).ready(function() {
         }
     }
 
+    //like counter starts here//
+
     var movieLikeCounter = $('.likeImage');
     var countNum = $('.headerCounter');
     for (let i = 0; i < movieLikeCounter.length; i++) {
@@ -50,6 +54,9 @@ $(document).ready(function() {
             countNum[i].innerHTML++;
         }
     }
+
+    //sorting starts here//
+
     $("#popular").on("click", function() {
         let num_order = $(".movie_wrapper").sort(function(a, b) {
             return $(b).find("h1").text() - $(a).find("h1").text()

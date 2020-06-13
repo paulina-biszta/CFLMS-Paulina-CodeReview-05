@@ -27,6 +27,9 @@ footer>h1 {
     font-size: 4.5vw;
 }
 
+
+/*navbar starts here*/
+
 nav {
     background-color: #5d5b6a;
     width: 100%;
@@ -44,6 +47,9 @@ li {
     padding-left: 3vw;
 }
 
+
+/*navbar ends here*/
+
 section {
     display: flex;
     width: 100%;
@@ -59,6 +65,9 @@ section>h1 {
     justify-content: flex-end;
     align-items: center;
 }
+
+
+/* sorting buttons start here*/
 
 #buttons {
     background-color: #204051;
@@ -114,6 +123,12 @@ section>h1 {
 #sort_button:hover {
     background-color: rgba(29, 36, 42, 0.4);
 }
+
+
+/* sorting buttons end here*/
+
+
+/*main container starts here*/
 
 #container {
     width: 100%;
@@ -232,6 +247,9 @@ section>h1 {
     cursor: pointer;
 }
 
+
+/*main container ends here*/
+
 footer {
     height: 7vw;
 }
@@ -245,6 +263,9 @@ footer>img {
     height: 5vw;
     padding-right: 1vw;
 }
+
+
+/*media query starts here*/
 
 @media screen and (max-width: 480px) {
     nav {
@@ -275,8 +296,17 @@ footer>img {
     .movie_title>p {
         font-size: 2vw;
     }
+    .moreb {
+        font-size: 2vw;
+    }
+    .more>p {
+        text-align: justify;
+        color: white;
+        font-size: 1.4vw;
+        visibility: hidden;
+    }
     .counterDiv {
-        padding-top: 15vw;
+        padding-top: 3vw;
     }
     #buttons {
         padding-right: 13vw;
