@@ -196,6 +196,7 @@ section>h1 {
     border: none;
     padding: 0 1vw;
     margin: 1vw 0;
+    cursor: pointer;
 }
 
 .more>p {
