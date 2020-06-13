@@ -225,3 +225,48 @@ footer>img {
     height: 5vw;
     padding-right: 1vw;
 }
+
+@media screen and (max-width: 480px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        padding: 0;
+    }
+    #container {
+        flex-flow: column;
+        height: 220vw;
+    }
+    .movie_wrapper {
+        margin: 0 auto;
+        width: 70%;
+        height: 30vw;
+    }
+    .img_container {
+        width: 20vw;
+    }
+    .img_container>img {
+        width: 18vw;
+    }
+    .movie_title>h3 {
+        font-size: 3vw;
+    }
+    .movie_title>p {
+        font-size: 2vw;
+    }
+    .counterDiv {
+        padding-top: 15vw;
+    }
+    #buttons {
+        padding-right: 13vw;
+        flex-basis: 32%;
+    }
+    #sub_buttons {
+        right: 16vw;
+    }
+    .sub_button {
+        font-size: 1.5vw;
+        padding: 0.7vw;
+    }
+}
