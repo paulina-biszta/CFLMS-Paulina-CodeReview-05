@@ -9,24 +9,37 @@ $(document).ready(function() {
             <div class="img_container">
                 <img src="${movie.image}">
             </div>
-                <div class="movie_title">
-                    <h3>${movie.title}</h3>
-                    <p class="movie_description">${movie.description}</p>
-                    <div class="counterDiv">
-                <p>Like</p>
-                <span class="countBtn">
-                    <img class="likeImage" src="img/like.png" alt="thumbs up">
-                </span>
-                <div class="countNum">
-                    <h1 class="headerCounter">${like}</h1>
+            <div class="movie_title">
+                <h3>${movie.title}</h3>
+                <p class="movie_description">${movie.description}</p>
+                <div class="more">
+                    <button class="moreb">More</button>
+                    <p class="more_info">${movie.more}</p>
                 </div>
+                <div class="counterDiv">
+                    <p>Like</p>
+                    <span class="countBtn">
+                        <img class="likeImage" src="img/like.png" alt="thumbs up">
+                    </span>
+                    <div class="countNum">
+                        <h1 class="headerCounter">${like}</h1>
+                    </div>
                 </div>
-                
             </div>
         </div>
         `;
     }
     $("#container").html(content);
+
+    var morebutton = $('.moreb')
+    var moreinf = $('.more_info')
+    for (let i = 0; i < morebutton.length; i++) {
+        $(morebutton[i]).on('click', show);
+
+        function show() {
+            $(moreinf[i]).css("visibility", "visible");
+        }
+    }
 
     var movieLikeCounter = $('.likeImage');
     var countNum = $('.headerCounter');

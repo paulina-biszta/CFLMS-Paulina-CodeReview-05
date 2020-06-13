@@ -1,6 +1,6 @@
-var movies = `[{"title": "Avatar","description": "Romantic Comedy","image": "img/avatar.jpg"},
-    {"title": "Midnight in Paris","description": " Fantasy Comedy-Drama","image": "img/midnight.jpg"},
-    {"title": "Black Swan","description": " Psychological Horror","image": "img/swan.jpg"},
-    {"title": "A Star Is Born","description": "Romantic Musical Drama","image": "img/star.jpg"},
-    {"title": "Crazy Rich Asians","description": "Romantic Comedy","image": "img/crazy.jpg"},
-    {"title": "Mamma Mia 2","description": "Musical","image": "img/mamma.jpg"}]`;
+var movies = `[{"title": "Avatar","description": "Romantic Comedy","image": "img/avatar.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."},
+    {"title": "Midnight in Paris","description": " Fantasy Comedy-Drama","image": "img/midnight.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."},
+    {"title": "Black Swan","description": " Psychological Horror","image": "img/swan.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."},
+    {"title": "A Star Is Born","description": "Romantic Musical Drama","image": "img/star.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."},
+    {"title": "Crazy Rich Asians","description": "Romantic Comedy","image": "img/crazy.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."},
+    {"title": "Mamma Mia 2","description": "Musical","image": "img/mamma.jpg","more": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, repudiandae id odit consequuntur facere delectus consequatur sed praesentium hic."}]`;

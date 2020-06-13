@@ -127,9 +127,10 @@ section>h1 {
 }
 
 .movie_wrapper {
-    width: 40%;
+    width: 45%;
+    height: 22vw;
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 3vw;
+    margin: 2vw;
     display: flex;
     -webkit-box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.75);
@@ -137,14 +138,14 @@ section>h1 {
 }
 
 .img_container {
-    width: 11vw;
+    width: 13vw;
     display: flex;
     align-items: center;
     padding-left: 1vw;
 }
 
 .img_container>img {
-    width: 11vw;
+    width: 13vw;
     object-fit: cover;
     border: 1px rgba(255, 255, 255, 0.6) solid;
 }
@@ -170,6 +171,25 @@ section>h1 {
     margin-left: 2vw;
 }
 
+.more {
+    margin-left: 2vw;
+}
+
+.moreb {
+    background-color: #204051;
+    color: white;
+    border: none;
+    padding: 0 1vw;
+    margin: 1vw 0;
+}
+
+.more>p {
+    text-align: justify;
+    color: white;
+    font-size: 1vw;
+    visibility: hidden;
+}
+
 .counterDiv {
     width: 100%;
     flex-flow: row;
@@ -177,7 +197,7 @@ section>h1 {
     color: #2db42d;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-top: 8vw;
+    padding-top: 2vw;
 }
 
 .counterDiv>p {
